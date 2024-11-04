@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <form action="/list-2/centered-average/">
+      <label>Centered Average:</label>
+      <input type="text" name="array" placeholder="Number Array" />
+      {% if result is not None %}
+      <p>{{ result }}</p>
+      {% endif %}
+      <br /><br />
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
