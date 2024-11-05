@@ -8,26 +8,9 @@
   <body>
     <form action="/">
       <label>Hey You:</label>
-      <input type="text" name="name" placeholder="Name" />
-      {% if name is not None %}
+      {{ form.as_p }} {% if name is not None %}
       <p>Hey, {{ name }}!</p>
       {% endif %}
-      <br /><br />
-      <label>How Old:</label>
-      <input type="number" name="age-in" placeholder="Current Year" />
-      <input type="number" name="birth" placeholder="Birth Year" />
-      {% if old is not None %}
-      <p>{{ old }}</p>
-      {% endif %}
-      <br /><br />
-      <label>Can I Take Your Order:</label>
-      <input type="number" name="burgers" placeholder="Burgers ($4.50)" />
-      <input type="number" name="fries" placeholder="Fries ($1.50)" />
-      <input type="number" name="drinks" placeholder="Drinks ($1.00)" />
-      {% if order_total is not None %}
-      <p>{{ order_total }}</p>
-      {% endif %}
-      <br /><br />
       <button type="submit">Submit</button>
     </form>
   </body>

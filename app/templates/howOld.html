@@ -6,10 +6,10 @@
     <title>Form</title>
   </head>
   <body>
-    <form action="/string-2/xyz-there/">
-      <label>XYZ There:</label>
-      {{ form.as_p }} {% if result is not None %}
-      <p>{{ result }}</p>
+    <form action="/age-in/">
+      <label>How Old:</label>
+      {{ form.as_p }} {% if old is not None %}
+      <p>{{ old }}</p>
       {% endif %}
       <button type="submit">Submit</button>
     </form>

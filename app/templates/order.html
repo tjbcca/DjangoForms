@@ -6,10 +6,10 @@
     <title>Form</title>
   </head>
   <body>
-    <form action="/string-2/xyz-there/">
-      <label>XYZ There:</label>
-      {{ form.as_p }} {% if result is not None %}
-      <p>{{ result }}</p>
+    <form action="/order-total/">
+      <label>Can I Take Your Order:</label>
+      {{ form.as_p }} {% if order_total is not None %}
+      <p>{{ order_total }}</p>
       {% endif %}
       <button type="submit">Submit</button>
     </form>

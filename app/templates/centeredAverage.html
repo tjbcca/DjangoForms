@@ -8,11 +8,9 @@
   <body>
     <form action="/list-2/centered-average/">
       <label>Centered Average:</label>
-      <input type="text" name="array" placeholder="Number Array" />
-      {% if result is not None %}
+      {{ form.as_p }} {% if result is not None %}
       <p>{{ result }}</p>
       {% endif %}
-      <br /><br />
       <button type="submit">Submit</button>
     </form>
   </body>

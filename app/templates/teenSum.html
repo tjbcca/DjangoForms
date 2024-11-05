@@ -8,13 +8,9 @@
   <body>
     <form action="/logic-2/no-teen-sum/">
       <label>No Teen Sum:</label>
-      <input type="number" name="a" placeholder="A" />
-      <input type="number" name="b" placeholder="B" />
-      <input type="number" name="c" placeholder="C" />
-      {% if total is not None %}
+      {{ form.as_p }} {% if total is not None %}
       <p>{{ total }}</p>
       {% endif %}
-      <br /><br />
       <button type="submit">Submit</button>
     </form>
   </body>

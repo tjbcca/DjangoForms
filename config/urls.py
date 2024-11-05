@@ -21,6 +21,8 @@ from app.views import *
 
 urlpatterns = [
     path('', root, name='root'),
+    path('age-in/', how_old),
+    path('order-total/', order),
     path('warmup-2/font-times/', front_times),
     path('logic-2/no-teen-sum/', teen_sum),
     path('string-2/xyz-there/', xyz_there),
